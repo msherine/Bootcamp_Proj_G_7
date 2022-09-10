@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+/* Utility Class */
+
+.hidden {
+   display: none;
+}
+
+
+/* General rules - scales images, videos to size of container */
+/* browsers have built in values for elements so we'll reset a few things to zero */
+
+
+
+
+
+#more {display: none;}
