@@ -546,6 +546,25 @@ form .action input[type="reset"]:hover {
    padding-bottom: 15px;
 }
 
+.team-members{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   
+}
+
+.team-crew{
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   justify-content: space-between;
+   align-items: center;
+   margin: 10% 10% 10% 10%;
+}
+
+.member-info{
+   width: 50%;
+}
 @media (max-width: 480px){
    .profile-container {
          display: flex;
