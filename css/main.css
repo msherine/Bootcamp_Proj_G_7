@@ -564,6 +564,12 @@ form .action input[type="reset"]:hover {
 
 .member-info{
    width: 50%;
+   text-align: center;
+   line-height: 2;
+}
+
+.member-info h4{
+   color: #f6921e;
 }
 @media (max-width: 480px){
    .profile-container {
