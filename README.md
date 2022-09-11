@@ -1,8 +1,28 @@
-# artiGem Design Agency - Bootcamp Project
+# Bootcamp Project 
 
 
-<img src="images/artigem_tagline_logo.svg" width="600"  > <br>
+<img src="images/artigem_tagline_logo.svg" width="400"  > <br>
 
+
+
+## Introduction - artiGem Digital Agency - Making your brands glittering!
+
+artiGem derives from artisan meaning skilled experts who make clients brands twinkling and shining. artiGem is a production house related to Digital Media Design for clients. Our team consists of 4 crews, including two designers and two web developers. Absolutely can provide clients with the highest quality and efficiency of services and works.
+<hr>
+
+
+## Features
+
+Through data-driven and purposeful design, artiGem curated specific color stories, typogrphy selection, and graphic design elements that guided the user journeys through the white paper to convey the research in a creative and informational format, 80% of planner report their role involves more experience creation, up five percent from last year.
+
+
+## Technologies & Services
+* Web Development with HTML, CSS, JavaScript
+* Branding
+* Digital Media Advertising
+* Printing Design
+* Products Design
+* 3d Model Design
 
 
 ## Prerequisites
