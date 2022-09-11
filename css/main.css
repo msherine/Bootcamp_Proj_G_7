@@ -536,3 +536,25 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
    padding-bottom: 15px;
 }
 
+/* ========== Portfolio main Page ========== */
+
+.portfolioContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 3px solid blue;
+}
+.portfolio_row{
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   border: 3px solid black;
+}
+
+.portfolio_item{
+   height: 250px;
+   width: 50%;
+   border: 3px solid red;
+}
