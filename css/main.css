@@ -425,10 +425,16 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
       display: flex;
       flex-direction: column;
    }
-
    form .action input {
       margin-bottom: 10px;
       width: 100%;
+   }
+   .team-members > * {
+      flex-wrap: wrap;
+      display: flex;
+    
+      justify-content: center;
+      align-items: center;
    }
 }
 
@@ -540,6 +546,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
    display: inline-block;
    align-items: center;
    padding: 100px;
+   margin-left: 730px;
 }
 
 .team-crew {
