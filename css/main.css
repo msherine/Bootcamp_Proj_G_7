@@ -577,3 +577,45 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
       height: 100%;
    }
  }
+
+ /* ========== Contact Page ========== */
+
+ .contact-container{
+   display: flex;
+   flex-direction: row ;
+   justify-content: space-around;
+   align-items: center;
+   width: 80%;
+   margin: 6% 10% 0 10%;
+   border: 2px solid red;
+   
+ }
+
+ .contact-logo-container{
+   width: 10rem;
+   height: auto;
+ }
+
+ .contact-logo{
+   width: 100%;
+   height: 100%;
+ }
+
+ .address-form-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   width: 50%;
+ }
+
+ .map{
+   width: 50%;
+   height: 500px;
+
+ }
+
+ .iframe_map{
+   width: 100%;
+   height: 100%;
+}
