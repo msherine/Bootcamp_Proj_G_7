@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 /* CSS Document */
 
 
@@ -19,11 +11,20 @@
 /* General rules - scales images, videos to size of container */
 /* browsers have built in values for elements so we'll reset a few things to zero */
 
-img, embed, object, video {
+img,
+embed,
+object,
+video {
    max-width: 100%;
 }
 
-div, p, body, header, footer, section, nav {
+div,
+p,
+body,
+header,
+footer,
+section,
+nav {
    margin: 0;
    padding: 0;
 }
@@ -77,11 +78,13 @@ a {
    transition: all .1s linear 0s;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
    text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
    text-decoration: none;
 }
 
@@ -90,7 +93,8 @@ h2 {
    color: #f6921e;
 }
 
-h3, h4 {
+h3,
+h4 {
    font-family: 'Roboto', Arial, Helvetica, sans-serif;
    color: #404041;
    font-size: 1.5rem;
@@ -223,7 +227,7 @@ p {
    margin: auto;
    vertical-align: top;
    max-width: 1200px;
-   
+
 }
 
 .svg-icons p {
@@ -407,13 +411,15 @@ form .action input[type="submit"] {
    color: #f6921e;
 }
 
-form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover  {
+form .half .item input:focus,
+form .full textarea:focus,
+form .action input[type="reset"]:hover {
    background: rgba(255, 255, 255, 0.075);
 }
 
 
-@media (max-width: 480px){
-   form .half{
+@media (max-width: 480px) {
+   form .half {
       flex-direction: column;
    }
 
@@ -425,14 +431,16 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
       display: flex;
       flex-direction: column;
    }
+
    form .action input {
       margin-bottom: 10px;
       width: 100%;
    }
-   .team-members > * {
+
+   .team-members>* {
       flex-wrap: wrap;
       display: flex;
-    
+
       justify-content: center;
       align-items: center;
    }
@@ -538,13 +546,14 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 
 /* ========== Portfolio main Page ========== */
 
-.portfolioContainer{
+.portfolioContainer {
    display: flex;
    flex-direction: column;
    align-items: center;
    /* border: 3px solid blue; */
 }
-.portfolio_row{
+
+.portfolio_row {
    height: 600px;
    display: flex;
    flex-direction: row;
@@ -552,19 +561,19 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
    /* border: 3px solid black; */
 }
 
-.portfolio_item{ 
-    width: 50%; 
-    height: 100%;
+.portfolio_item {
+   width: 50%;
+   height: 100%;
    /* border: 3px solid red; */
- } 
+}
 
- .portfolio_img{
+.portfolio_img {
    width: 100%;
    height: 100%;
- }
+}
 
- @media (max-width: 480px){
-   .portfolio_row{
+@media (max-width: 480px) {
+   .portfolio_row {
       height: 850px;
       display: flex;
       flex-direction: column;
@@ -572,54 +581,157 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
       /* border: 3px solid black; */
    }
 
-   .portfolio_item{
+   .portfolio_item {
       width: 100%;
       height: 100%;
    }
- }
+}
 
- /* ========== Contact Page ========== */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+   .portfolio_row {
+      height: 850px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      /* border: 3px solid black; */
+   }
 
- .contact-container{
+   .portfolio_item {
+      width: 100%;
+      height: 100%;
+   }
+}
+
+/* ========== Contact Page ========== */
+
+.contact-container {
    display: flex;
-   flex-direction: row ;
-   justify-content: space-around;
-   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
    width: 80%;
+   height: 900px;
    margin: 6% 10% 0 10%;
-   border: 2px solid red;
-   
- }
 
- .contact-logo-container{
+}
+
+.contact-section {
+   height: 180px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.contact-logo-container {
    width: 10rem;
    height: auto;
- }
+}
 
- .contact-logo{
+.contact-logo {
    width: 100%;
    height: 100%;
- }
+}
 
- .address-form-container{
+.contact-text {
+   text-align: center;
+}
+
+.address-form-container {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
    width: 50%;
- }
+   height: 100%;
+}
 
- .map{
+.map {
    width: 50%;
-   height: 500px;
+   height: 90%;
 
- }
+}
 
- .iframe_map{
+.iframe_map {
    width: 100%;
    height: 100%;
 
-// about page
+}
+
+@media (max-width: 480px) {
+   .contact-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 1800px;
+      border: 2px solid orange;
+   }
+
+   .contact-section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .map {
+      width: 100%;
+      height: 50%;
+   }
+
+   .iframe_map {
+      width: 100%;
+      height: 100%;
+   }
+
+   .address-form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+   }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+   .contact-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 1800px;
+      border: 2px solid orange;
+   }
+
+   .contact-section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .map {
+      width: 100%;
+      height: 50%;
+   }
+
+   .iframe_map {
+      width: 100%;
+      height: 100%;
+   }
+
+   .address-form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+   }
+
+
+}
+
+/* ========== about page ========== */
+
 #dots {
    color: #fff;
 }
