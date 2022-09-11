@@ -280,27 +280,33 @@ p {
 
 .clients h3 {
    color: #f6921e;
-   padding: 40px;
+   margin: 50px 0;
+
 }
 
 .fanshawe-logo {
    height: 40px;
+   margin-right: 50px;
 }
 
 .nike-logo {
    height: 40px;
+   margin-right: 50px;
 }
 
 .uot-logo {
    height: 50px;
+   margin-right: 50px;
 }
 
 .tim-hortons-logo {
    height: 50px;
+   margin-right: 50px;
 }
 
 .walmart-logo {
    height: 50px;
+   margin-right: 50px;
 }
 
 .carter-logo {
