@@ -444,6 +444,7 @@ form .action input[type="reset"]:hover {
       justify-content: center;
       align-items: center;
    }
+
 }
 
 
@@ -498,18 +499,20 @@ form .action input[type="reset"]:hover {
 /* Pano area */
 
 
-
-.pano-team-member {
-   display: inline;
-}
-
-.pano-team-member ul li {
-   display: inline-flex;
-   align-items: initial;
+.profile-container {
+   display: flex;
+   flex-direction: row;
    height: 600px;
-   margin: 0;
+   width: 100%;
+   
 }
-
+.profile-img{
+   width:25%;
+}
+.member_img{
+   width: 100%;
+   height: 100%;
+}
 /* About Team */
 
 .about-team {
@@ -543,6 +546,45 @@ form .action input[type="reset"]:hover {
    padding-bottom: 15px;
 }
 
+@media (max-width: 480px){
+   .profile-container {
+         display: flex;
+         flex-direction: column;
+         height: auto;
+         width: 100%;
+         
+      }
+      .profile-img{
+         width:100%;
+         height: 650px;
+      }
+      .member_img{
+         width: 100%;
+         height: 100%;
+      }
+      
+    }
+   
+    @media only screen and (min-width: 481px) 
+    and (max-width: 1024px) {
+      .profile-container {
+         display: flex;
+         flex-direction: column;
+         height: auto;
+         width: 100%;
+         
+      }
+      .profile-img{
+         width:100%;
+         height: 650px;
+      }
+      .member_img{
+         width: 100%;
+         height: 100%;
+      }
+      
+    }
+   
 
 /* ========== Portfolio main Page ========== */
 
@@ -726,55 +768,4 @@ form .action input[type="reset"]:hover {
       width: 100%;
       height: auto;
    }
-
-
-}
-
-/* ========== about page ========== */
-
-#dots {
-   color: #fff;
-}
-
-
-/* Team Members */
-
-.team-members {
-   display: inline-block;
-   align-items: center;
-   padding: 100px;
-   margin-left: 730px;
-}
-
-.team-crew {
-   display: flex;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-items: center;
-   vertical-align: top;
-   max-width: 1000px;
-   margin-bottom: 100px;
-}
-
-.team-crew img {
-   width: 300px;
-   height: 300px;
-}
-
-.team-crew .member-info {
-   margin-left: 70px;
-}
-
-.member-info h4 {
-   color: #f6921e;
-   padding-bottom: 5px;
-}
-
-.member-info p {
-   line-height: 1.2rem;
-}
-
-.member-info .role {
-   color: #666666;
-   font-weight: 600;
 }
