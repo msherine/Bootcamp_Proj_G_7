@@ -1,0 +1,538 @@
+
+
+
+
+
+
+
+
+/* CSS Document */
+
+
+/* Utility Class */
+
+.hidden {
+   display: none;
+}
+
+
+/* General rules - scales images, videos to size of container */
+/* browsers have built in values for elements so we'll reset a few things to zero */
+
+img, embed, object, video {
+   max-width: 100%;
+}
+
+div, p, body, header, footer, section, nav {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   border: none;
+   margin: 0;
+   padding: 0;
+}
+
+p {
+   font-size: 18px;
+   font-weight: 200;
+   font-family: 'Franklin Gothic book', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* switch box model */
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+/* Fix for scaling of images */
+img {
+   -ms-interpolation-mode: bicubic;
+}
+
+/* end Basic Reset */
+
+
+/* General Rulses for Elements */
+
+/* html selectors */
+
+body {
+   font-family: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
+   /* background-color: rgb(200, 16, 46); */
+   /* background-color: #fe0000; */
+   background-color: #fff;
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+   transition: all .1s linear 0s;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+}
+
+a:hover, a:active {
+   text-decoration: none;
+}
+
+h2 {
+   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+   color: #f6921e;
+}
+
+h3 {
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   color: #404041;
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+
+p {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #404041;
+   font-size: 1rem;
+}
+
+.container {
+   margin: 0px auto;
+   /* padding: 0px 15px 0px 15px; */
+   max-width: 1366px;
+}
+
+
+/* ========== Index Page ========== */
+
+/* Header and Nav */
+
+/* .headerContainer {
+   background: #fff;
+   height: auto;
+} */
+
+#mainHeader {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   width: auto;
+   height: auto;
+   background-color: #fff;
+}
+
+.headerLogo {
+   width: 10rem;
+   height: auto;
+   padding: 20px 0 15px 0;
+   align-items: flex-start;
+}
+
+.mainNav {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+.mainNav ul {
+   display: flex;
+   text-transform: uppercase;
+   font-family: 'Poppins', Arial, sans-serif;
+   font-weight: 500;
+   height: auto;
+}
+
+.mainNav ul li a {
+   display: block;
+   color: #f6921e;
+   font-size: 20px;
+   padding: 30px 20px;
+}
+
+.mainNav li a:hover {
+   color: #404041;
+   border-bottom: 3px solid #404041;
+   padding-bottom: 5px;
+   background-color: transparent;
+}
+
+/* Pano area */
+
+#pano {
+   height: 600px;
+   background-image: url(../images/desktop_banner01.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* About Team */
+
+.index-team {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 300px;
+   margin: auto;
+   background-color: #404041;
+}
+
+.index-about-content h3 {
+   color: #f6921e;
+}
+
+.index-about-content p {
+   line-height: 1.5rem;
+   color: #fff;
+   padding-bottom: 15px;
+}
+
+
+/* Our Services */
+
+.our-services {
+   display: inline;
+   justify-items: center;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   margin: auto;
+   background-color: #fff;
+}
+
+.our-services h3 {
+   color: #f6921e;
+   padding: 40px;
+
+}
+
+.svg-icons {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: auto;
+   vertical-align: top;
+   max-width: 1200px;
+   
+}
+
+.svg-icons p {
+   color: #404041;
+   padding-top: 10%;
+   padding-bottom: 80px;
+}
+
+.imac-svg {
+   height: 60px;
+   fill: #f6921e;
+}
+
+.mobile-svg {
+   height: 60px;
+   fill: #f6921e;
+}
+
+.businessman-svg {
+   height: 60px;
+}
+
+.social-media-svg {
+   height: 60px;
+}
+
+.video-camera-svg {
+   height: 60px;
+}
+
+.printing-svg {
+   height: 60px;
+}
+
+
+/* Our Clients */
+
+.clients {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   background: #dadada;
+   padding-bottom: 50px;
+}
+
+.clients-logo {
+   display: flex;
+}
+
+.clients h3 {
+   color: #f6921e;
+   margin: 50px 0;
+
+}
+
+.fanshawe-logo {
+   height: 40px;
+   margin-right: 50px;
+}
+
+.nike-logo {
+   height: 40px;
+   margin-right: 50px;
+}
+
+.uot-logo {
+   height: 50px;
+   margin-right: 50px;
+}
+
+.tim-hortons-logo {
+   height: 50px;
+   margin-right: 50px;
+}
+
+.walmart-logo {
+   height: 50px;
+   margin-right: 50px;
+}
+
+.carter-logo {
+   height: 60px;
+}
+
+
+/* Contact Form */
+
+.contact-info {
+   display: flex;
+   flex-wrap: wrap-reverse;
+}
+
+.contact-us {
+   margin: 80px auto 0 auto;
+}
+
+.contact-us p {
+   text-align: center;
+   line-height: 1.5rem;
+   margin: 10px 0;
+}
+
+form {
+   background: #fff;
+   width: 640px;
+   margin: 20px auto;
+   max-width: 97%;
+   border-radius: 4px;
+   padding: 55px 30px;
+   color: #f6921e;
+}
+
+form .half {
+   display: inline;
+   justify-content: space-between;
+}
+
+form .half .item {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 24px;
+   width: 100%;
+}
+
+form label {
+   display: block;
+   font-size: 13px;
+   letter-spacing: 2px;
+   margin-bottom: 5px;
+}
+
+form .half .item input {
+   border-radius: 4px;
+   border: 1px solid #f6921e;
+   outline: 0;
+   padding: 16px;
+   width: 100%;
+   height: 44px;
+   background: transparent;
+   font-size: 17px;
+}
+
+form .full {
+   margin-bottom: 24px;
+}
+
+form .full textarea {
+   background: transparent;
+   border-radius: 4px;
+   border: 1px solid #f6921e;
+   outline: 0;
+   padding: 12px 16px;
+   width: 100%;
+   height: 200px;
+   font-size: 17px;
+}
+
+form .action {
+   margin-bottom: 32px;
+}
+
+form .action input {
+   background: transparent;
+   border-radius: 4px;
+   border: 1px solid #f6921e;
+   cursor: pointer;
+   font-size: 13px;
+   font-weight: 600;
+   height: 44px;
+   letter-spacing: 3px;
+   outline: 0;
+   padding: 0 20px 0 22px;
+   margin-right: 10px;
+}
+
+form .action input[type="submit"] {
+   background: white;
+   color: #f6921e;
+}
+
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover  {
+   background: rgba(255, 255, 255, 0.075);
+}
+
+
+@media (max-width: 480px){
+   form .half{
+      flex-direction: column;
+   }
+
+   form .half .item {
+      width: 100%;
+   }
+
+   form .action {
+      display: flex;
+      flex-direction: column;
+   }
+
+   form .action input {
+      margin-bottom: 10px;
+      width: 100%;
+   }
+}
+
+
+/* Footer */
+
+#mainFooter {
+   align-items: center;
+   background-color: #f6921e;
+   height: 50px;
+   color: #fff;
+   /* text-align: center; */
+}
+
+.social-icons {
+   display: flex;
+   justify-content: space-around;
+   justify-items: center;
+   align-items: baseline;
+}
+
+.social-icons li {
+   display: inline-block;
+   margin-right: 5px;
+   margin-top: 5px;
+}
+
+.social-icons li a {
+   width: 35px;
+   height: 35px;
+   border-radius: 7px;
+   display: inline-block;
+   line-height: 35px;
+   background-color: #404041;
+   color: #fff;
+   font-size: 17px;
+   text-align: center;
+   transition: all .3s;
+}
+
+.social-icons li a:hover {
+   background-color: #000;
+   color: #f6921e;
+}
+
+.social-icons p {
+   color: #fff;
+}
+
+
+/* ========== About Page ========== */
+
+/* Pano area */
+
+#pano-team {
+   margin: 0;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.pano-team-member {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: auto;
+}
+
+.pano-team-member ul li {
+   display: inline-block;
+   height: 600px;
+}
+
+/* About Team */
+
+.about-team {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: auto;
+   height: auto;
+   margin: auto;
+   background-color: #404041;
+}
+
+.about-content {
+   display: line;
+   align-items: center;
+   padding: 60px;
+   width: 1000px;
+}
+
+.about-content h3 {
+   vertical-align: top;
+   color: #f6921e;
+   padding: 20px;
+}
+
+.about-content p {
+   text-align: left;
+   line-height: 1.5rem;
+   color: #fff;
+   padding-bottom: 15px;
+}
+
