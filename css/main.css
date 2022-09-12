@@ -455,6 +455,7 @@ form .action input[type="reset"]:hover {
    background-color: #f6921e;
    height: 50px;
    color: #fff;
+   margin-top: 120px;
    /* text-align: center; */
 }
 
@@ -639,8 +640,19 @@ form .action input[type="reset"]:hover {
    /* border: 3px solid blue; */
 }
 
+.portfolioContainer img {
+   opacity: 0.7;
+    transition: opacity 0.5s, 
+                transform 1s;
+}
+
+.portfolioContainer img:hover {
+      cursor: pointer;
+      opacity: 1;
+
+}
+
 .portfolio_row {
-   height: 600px;
    display: flex;
    flex-direction: row;
    width: 100%;
@@ -648,7 +660,7 @@ form .action input[type="reset"]:hover {
 }
 
 .portfolio_item {
-   width: 50%;
+
    height: 100%;
    /* border: 3px solid red; */
 }
@@ -659,6 +671,7 @@ form .action input[type="reset"]:hover {
 }
 
 @media (max-width: 480px) {
+
    .portfolio_row {
       height: 850px;
       display: flex;
