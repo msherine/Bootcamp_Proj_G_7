@@ -455,7 +455,6 @@ form .action input[type="reset"]:hover {
    background-color: #f6921e;
    height: 50px;
    color: #fff;
-   margin-top: 120px;
    /* text-align: center; */
 }
 
@@ -688,7 +687,7 @@ form .action input[type="reset"]:hover {
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
    .portfolio_row {
-      height: 850px;
+
       display: flex;
       flex-direction: column;
       width: 100%;
