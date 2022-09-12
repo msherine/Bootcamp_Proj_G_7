@@ -813,3 +813,153 @@ form .action input[type="reset"]:hover {
       height: auto;
    }
 }
+
+/*------------ a. start nav show/hide desktop ------------*/
+@media only screen and (min-width: 1025px) {
+   .full {
+      display: grid;
+   }
+
+   .tablet {
+      /*----*/
+   }
+
+   .mobile {
+      display: none;
+      /* grid-column: 2 / span 1; */
+   }
+}
+
+/*------------ a. end nav show/hide mobile ------------*/
+
+/*------------ a. start nav show/hide mobile ------------*/
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+   .full {
+      display: none;
+   }
+
+   .tablet {
+      /*----*/
+   }
+
+   .mobile {
+      display: grid;
+      /* grid-column: 2 / span 1; */
+   }
+}
+
+/*------------ a. end nav show/hide mobile ------------*/
+
+/*------------ b. start mobile nav overlay/menu ------------*/
+
+@keyframes bugfix {
+   from {
+     padding: 0;
+   }
+   to {
+     padding: 0;
+   }
+  }
+  @-webkit-keyframes bugfix {
+   from {
+     padding: 0;
+   }
+   to {
+     padding: 0;
+   }
+  }
+  #overlay-button {
+   position: absolute;
+   right: 1em;
+   padding: 45px 11px;
+   z-index: 5;
+   cursor: pointer;
+   user-select: none;
+  }
+  #overlay-button span {
+   height: 3px;
+   width: 25px;
+   border-radius: 2px;
+   background-color: #f6921e;
+   position: relative;
+   display: block;
+   transition: all 0.2s ease-in-out;
+  }
+  #overlay-button span:before {
+   top: -7px;
+   visibility: visible;
+  }
+  #overlay-button span:after {
+   top: 7px;
+  }
+  #overlay-button span:before, #overlay-button span:after {
+   height: 3px;
+   width: 25px;
+   border-radius: 2px;
+   background-color: #f6921e;
+   position: absolute;
+   content: "";
+   transition: all 0.2s ease-in-out;
+  }
+  #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+   background: #404041;
+  }
+  
+  input[type=checkbox] {
+   display: none;
+  }
+  input[type=checkbox]:checked ~ #overlay {
+   visibility: visible;
+  }
+  input[type=checkbox]:checked ~ #overlay-button:hover span,
+  input[type=checkbox]:checked ~ #overlay-button span {
+   background: transparent;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:before {
+   transform: rotate(45deg) translate(5px, 5px);
+   opacity: 1;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:after {
+   transform: rotate(-45deg) translate(5px, -5px);
+  }
+  #overlay {
+   height: 100vh;
+   width: 100vw;
+   background: #404041;
+   z-index: 2;
+   visibility: hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+   /* This fixes scrolling issue */
+   overflow: hidden;
+  }
+  #overlay.active {
+   visibility: visible;
+  }
+  #overlay ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   height: 100vh;
+   padding-left: 0;
+   list-style-type: none;
+  }
+  #overlay ul li {
+   padding: .75em;
+  }
+  #overlay ul li a {
+   color: #f6921e;
+   text-decoration: none;
+   font-size: 1.25em;
+  }
+  #overlay ul li a:hover {
+   color: #ffffff;
+  }
+
+/*------------ End Mobile Nav ------------*/
+
+
+
