@@ -813,3 +813,108 @@ form .action input[type="reset"]:hover {
       height: auto;
    }
 }
+
+
+
+.main {
+   position: relative;
+   width: 100%;
+   text-align: center;
+}
+
+.bodyContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
+#imageContainer {
+   width: 600px;
+   height: 450px;
+   margin: 70px auto 0 auto;
+   overflow: hidden;
+   border-radius: 20px;
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 5, 0.9);
+}
+
+.teamContainer {
+   margin-top: 0px;
+   height: auto;
+}
+
+.teamMemberInfo {
+   color: #404041;
+   width: 70%;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.1em;
+   line-height: 30px;
+   font-weight: 300;
+   margin: 20px auto;
+   margin-top: 2em;
+   margin-bottom: 50px;
+
+   width: 800px;
+   text-align: left;
+}
+
+.teamMemberName {
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.5em;
+   font-weight: 500;
+   color: #f6921e;
+}
+
+#profileImages {
+   position: relative;
+   width: 7000px;
+   transition: all .5s;
+}
+
+#profileImages img {
+   float: left;
+}
+
+#bottomNav {
+   margin-top: 40px;
+}
+
+#navList li {
+   display: inline;
+   list-style-type: none;
+   padding: 0px 10px;
+   cursor: pointer;
+}
+
+.iconContainer {
+   width: 51px;
+   height: 54px;
+   display: inline-block;
+   overflow: hidden;
+   background-image: url(../images/teamBio_sprite.png);
+   background-repeat: no-repeat;
+   margin-bottom: 20px;
+   transition: transform .4s;
+   border-radius: 30px;
+}
+
+/* image sprite */
+
+.sigilContainer:active {
+   background-color: rgba(0, 180, 230, 0.3);
+   box-shadow: 0px 0px 50px 25px rgba(1, 18, 22, 0.4);
+}
+
+.cathy { background-position: 0px -54px; }
+.cathy:hover { background-position: 0px 0px; }
+
+.sahar { background-position: -50.5px -54px; }
+.sahar:hover { background-position: -51px 0px; }
+
+.sherine { background-position: -101px -54px; }
+.sherine:hover { background-position: -101px 0px; }
+
+.eugene { background-position: -151.5px -54px; }
+.eugene:hover { background-position: -151px 0px; }
+
+/* end image sprite */
